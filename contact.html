@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <title>EduFord University</title>
+</head>
+
+<body>
+    <!------------Header Section------------>
+    <div class="cursor"></div>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+
+            <!------------Nav bar Section------------>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="contact-heading">Contact Us</h1>
+    </section>
+
+    <!------------Contact Us Section------------>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193747.6573477421!2d-74.08508212082744!3d40.6451593628039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2slk!4v1637480576263!5m2!1sen!2slk"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+              <h5>Peterson Road, AB Stan Building</h5>
+              <p>Brooklyn, NewYork, USA</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+              <h5>+1 0123456789</h5>
+              <p>Monday to Friday, 10AM to 6PM</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+              <h5>info@eduforduniversityusa.org</h5>
+              <p>Email Us Your Query</p>
+            </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="'post">
+                    <input type="text" name="name" placeholder="Enter your name" required />
+                    <input type="email" name="email" placeholder="Enter your email address" required />
+                    <input type="text" name="subject" placeholder="Enter your subject" required />
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------Footer Section------------>
+
+    <footer>
+        <h4><a href="index.html">Main Page</a></h4>
+        <p>
+            &copy;Copyright 2021 <a href="">Chandupa Gunawardana</a> | All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
